@@ -17,7 +17,7 @@ import java.util.Collection;
 @Path("/api/user")
 @Produces({"application/json"}) // mime type
 @Singleton
-public class UserService {
+public class    UserService {
   private static final Logger log = LoggerFactory.getLogger(UserService.class);
 
   @Inject
