@@ -67,6 +67,7 @@ public class UserServlet extends HttpServlet {
           dispatcher.include(request, response);
         }
       }
+        out.println("Test");
       out.println("</body></html>");
     }
   }
