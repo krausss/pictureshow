@@ -10,11 +10,13 @@
     <class>de.dhbw.pictureshow.domain.User</class>
     <class>de.dhbw.pictureshow.domain.UuidId</class>
     <class>de.dhbw.pictureshow.domain.PersistentObject</class>
+      <class>de.dhbw.pictureshow.domain.Bild</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
     <properties>
       <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
-    </properties>
-
+      <property name="openjpa.Log" value="DefaultLevel=WARN, Tool=INFO, SQL =TRACE"/>
+      <property name="openjpa.ConnectionFactoryProperties" value="PrintParameters=true"/>
+</properties>
   </persistence-unit>
 </persistence>

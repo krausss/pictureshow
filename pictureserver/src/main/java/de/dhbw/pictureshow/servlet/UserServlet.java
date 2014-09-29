@@ -36,6 +36,8 @@ public class UserServlet extends HttpServlet {
     transaction.begin();
     Collection<User> users = userDao.list();
 
+
+
     User user = new User();
     user.setName("User " + users.size());
     userDao.persist(user);
